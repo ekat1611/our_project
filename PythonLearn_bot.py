@@ -7,8 +7,11 @@ def get_text_messages(message):
     if message.text == "Привет" or message.text == "ппривет":
         bot.send_message(message.from_user.id, "Привет, чем я могу тебе помочь?")
     elif message.text == '/help':
-        bot.send_message(message.from_user.id, "Здесь можно найти учебные материалы для изучения языка программирования "
-                                               "Python")
+        bot.send_message(message.from_user.id, "Здесь можно найти учебные материалы для изучения языка программирования"
+                                               "Python. Выберите пункт меню, который вас интересует:"
+                                               "/courses - бесплатные онлайн-курсы"
+                                               "/books - книги для изучения языка"
+                                               "/articles - полезные статьи")
     else:
         bot.send_message(message.from_user.id, "Я тебя не понимаю, напиши /help")
 

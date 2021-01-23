@@ -9,9 +9,9 @@ def get_text_messages(message):
     elif message.text == '/help':
         bot.send_message(message.from_user.id, "Здесь можно найти учебные материалы для изучения языка программирования"
                                                "Python. Выберите пункт меню, который вас интересует:"
-                                               "/courses - бесплатные онлайн-курсы"
-                                               "/books - книги для изучения языка"
-                                               "/articles - полезные статьи")
+                                               "/courses - бесплатные онлайн-курсы "
+                                               "/books - книги для изучения языка "
+                                               "/articles - полезные статьи ")
     else:
         bot.send_message(message.from_user.id, "Я тебя не понимаю, напиши /help")
 
